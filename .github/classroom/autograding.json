@@ -1,7 +1,7 @@
 {
   "tests": [
     {
-      "name": "Testa Tudo",
+      "name": "Test All",
       "setup": "",
       "run": "python -m unittest",
       "input": "",
