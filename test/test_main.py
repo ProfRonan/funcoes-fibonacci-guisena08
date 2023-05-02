@@ -1,7 +1,12 @@
 """Test file for testing the main.py file"""
 
 import unittest
-from main import fibonacci
+import sys
+from pathlib import Path
+# add the parent directory to the path in order to run it from the run command in vscode
+main_file_folder = Path(__file__).parents[1].as_posix() # pylint: disable=invalid-name
+sys.path.insert(0, main_file_folder)
+from main import fibonacci # pylint: disable=import-error,wrong-import-position
 
 class TestMain(unittest.TestCase):
     """Class for testing the main.py file"""
