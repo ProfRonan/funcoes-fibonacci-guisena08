@@ -10,9 +10,4 @@ def Fibonacci(n):
         for _ in range(2, n + 1):
             a,b = b, a +b 
         return b    
-numero = int(input("Digite o valor de n: "))
-try:
-    resultado = Fibonacci (numero)
-    print(f"fibonacci{numero}: {resultado}")
-except ValueError as error:
-    print(error)
+print (Fibonacci(1))
